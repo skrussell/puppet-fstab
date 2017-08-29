@@ -163,7 +163,7 @@ $fstab_changes_real will be:
     end
 
     opts.split(',').each_with_index do |opt, idx|
-      value = opt.split '='
+      value = opt.split '=',2
 
       # If there's a custom scope and this isn't the first opt
       # insert a new opt node after the last opt node.
